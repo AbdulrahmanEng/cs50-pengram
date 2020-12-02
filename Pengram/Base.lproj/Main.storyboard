@@ -24,11 +24,27 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUH-jX-Gh2">
-                                <rect key="frame" x="180" y="445" width="54" height="39"/>
+                                <rect key="frame" x="157" y="445" width="100" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Sepia"/>
                                 <connections>
                                     <action selector="applySepia" destination="BYZ-38-t0r" eventType="touchUpInside" id="C3t-0D-wri"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A69-dp-fY0">
+                                <rect key="frame" x="157" y="494" width="100" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Noir"/>
+                                <connections>
+                                    <action selector="applyNoir" destination="BYZ-38-t0r" eventType="touchUpInside" id="KIk-bQ-6Qc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIY-fa-9zY">
+                                <rect key="frame" x="147" y="541" width="120" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Vintage"/>
+                                <connections>
+                                    <action selector="applyVintage" destination="BYZ-38-t0r" eventType="touchUpInside" id="WGw-JF-6u0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -36,11 +52,18 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8WV-AS-GZ6" secondAttribute="trailing" constant="20" id="11M-Js-buG"/>
-                            <constraint firstItem="eUH-jX-Gh2" firstAttribute="centerX" secondItem="8WV-AS-GZ6" secondAttribute="centerX" id="67y-RY-zxR"/>
-                            <constraint firstItem="eUH-jX-Gh2" firstAttribute="top" secondItem="8WV-AS-GZ6" secondAttribute="bottom" constant="40" id="DFe-cx-GfC"/>
                             <constraint firstItem="8WV-AS-GZ6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="EBj-ZX-14K"/>
+                            <constraint firstItem="A69-dp-fY0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="Hef-iB-nfc"/>
                             <constraint firstItem="8WV-AS-GZ6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="NbO-EI-3y1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A69-dp-fY0" secondAttribute="trailing" constant="157" id="Qlm-De-hTj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eUH-jX-Gh2" secondAttribute="trailing" constant="157" id="Y0D-1K-abb"/>
+                            <constraint firstItem="A69-dp-fY0" firstAttribute="top" secondItem="eUH-jX-Gh2" secondAttribute="bottom" constant="10" id="Y0R-jA-JH8"/>
                             <constraint firstItem="8WV-AS-GZ6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="bLm-gr-Sqr"/>
+                            <constraint firstItem="ZIY-fa-9zY" firstAttribute="top" secondItem="A69-dp-fY0" secondAttribute="bottom" constant="8" symbolic="YES" id="ixj-RP-zku"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZIY-fa-9zY" secondAttribute="trailing" constant="147" id="qWw-Ot-Wrf"/>
+                            <constraint firstItem="ZIY-fa-9zY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="147" id="tMR-TV-3HR"/>
+                            <constraint firstItem="eUH-jX-Gh2" firstAttribute="top" secondItem="8WV-AS-GZ6" secondAttribute="bottom" constant="40" id="wZr-Sp-fSa"/>
+                            <constraint firstItem="eUH-jX-Gh2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="zot-2h-mTw"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Pengram" id="Qei-Yy-3hs">
